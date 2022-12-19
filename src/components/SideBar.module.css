@@ -1,5 +1,32 @@
 .sideBar {
   display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  border-radius: 0 0 1rem 1rem;
+  background-color: var(--white-100);
+}
+.logoImage {
+  width: 5rem;
+  color: var(--blue-300);
+}
+.logoImage span {
+  font-size: 1rem;
+  font-weight: 500;
+}
+.funcoes {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  gap: .5rem;
   list-style: none;
 }
-.sideBar
+.funcoes li {
+  padding: .5rem;
+  border-radius: 3rem;
+  background: var(--blue-300);
+}
+.funcoes li a {
+  display: flex;
+  color: var(--white-100);
+  text-decoration: none;
+}
