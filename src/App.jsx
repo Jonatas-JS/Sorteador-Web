@@ -2,6 +2,7 @@ import { useState } from 'react'
 import './App.css'
 
 import { SideBar } from './components/SideBar'
+import { Sorteio } from './components/Sorteio'
 
 function App() {
 
@@ -9,6 +10,10 @@ function App() {
     <div className="App">
       <SideBar />
       <p>Aqui</p>
+      <div className="sorteioNumero">
+      <Sorteio />
+      </div>
+
     </div>
   )
 }

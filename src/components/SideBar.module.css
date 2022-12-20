@@ -1,16 +1,16 @@
 .sideBar {
   display: flex;
+  align-items: center;
   justify-content: space-between;
   padding: 1rem 2rem;
   border-radius: 0 0 1rem 1rem;
   background-color: var(--white-100);
 }
 .logoImage {
-  width: 5rem;
   color: var(--blue-300);
 }
-.logoImage span {
-  font-size: 1rem;
+.logoImage p {
+  font-size: .9rem;
   font-weight: 500;
 }
 .funcoes {

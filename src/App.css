@@ -1,7 +1,13 @@
 #root {
   width: 100vw;
+  /* display: grid; */
+  /* justify-content: center; */
   /* max-width: 1280px; */
   /* margin: 0 auto; */
   /* padding: 2rem; */
   text-align: center;
+}
+.sorteioNumero {
+  display: grid;
+  justify-content: center;
 }
