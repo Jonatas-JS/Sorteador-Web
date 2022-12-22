@@ -1,6 +1,11 @@
 import styles from './Sorteio.module.css'
+import { Toggle } from './ButtomToggle'
 
 export function Sorteio() {
+  const logState = state => {
+    console.log("Toggled:", state)
+  }
+
   return (
     <div className={styles.sorteio}>
       <h3>Defina os parâmetros</h3>
@@ -11,12 +16,11 @@ export function Sorteio() {
         </div>
 
         <div>
-          <label htmlFor="checkbox" className={styles.toggler}>
-            <input type="checkbox" id="checkbox" />
-            <span className={styles.ball}></span>
-            <i className={styles.sun}></i>
-            <i className={styles.moon}></i>
-          </label>
+          <Toggle 
+            label="Visualizar o resultado somente ao clicar!"
+            toggled={false}
+            onClick={logState}
+          />
         </div>
       </div>
     </div>
