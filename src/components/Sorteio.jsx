@@ -1,5 +1,6 @@
 import styles from './Sorteio.module.css'
 import { Toggle } from './ButtomToggle'
+import { ButtomCalcular } from './ButtomCalcular'
 
 export function Sorteio() {
   const logState = state => {
@@ -20,6 +21,11 @@ export function Sorteio() {
             label="Visualizar o resultado somente ao clicar!"
             toggled={false}
             onClick={logState}
+          />
+        </div>
+        <div>
+          <ButtomCalcular 
+          name="Calcular"
           />
         </div>
       </div>
