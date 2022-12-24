@@ -25,7 +25,7 @@ export function Sorteio() {
         </div>
         <div>
           <ButtomCalcular 
-          name="Calcular"
+          name="Sortear"
           />
         </div>
       </div>

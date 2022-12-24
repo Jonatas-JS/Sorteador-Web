@@ -3,19 +3,16 @@ import styles from './ButtomCalcular.module.css'
 
 export function ButtomCalcular({ name }) {
   const [nSorteado, setNsorteado] = useState(0)
-  let acumulador = [10]
+  const [acc, setAcc] = useState([10, 20, 30])
+  let acumulador = [10, 20, 30]
 
   function calcular() {
-    setNsorteado(nSorteado + 1)
-
-    // acumulador.push(1, 2, 3)
-    // acumulador.push(4, 5, 6)
-
-    // console.log(acumulador)
+    setAcc([...acc, ...[1, 2, 3]])
   }
   return (
     <div>
-      <p>Resultado {nSorteado}</p>
+      {acc.map(item => <p key={Math.random()}>Resultado {item}</p>)}
+      
       <button onClick={calcular}>{name}</button>
     </div>
   )
