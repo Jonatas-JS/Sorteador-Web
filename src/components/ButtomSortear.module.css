@@ -1,0 +1,16 @@
+.buttomSortear {
+  background: var(--blue-light-200);
+  color: var(--white-100);
+
+  padding: .6rem 5rem;
+  margin-top: .5rem;
+  border: none;
+  border-radius: .5rem;
+
+  font-size: 1.3rem;
+  font-weight: 400;
+  cursor: pointer;
+}
+.buttomSortear:hover {
+  background: var(--blue-light-100);
+}

@@ -37,7 +37,7 @@
   transition: .3s;
 }
 .buttomToggle input:checked + span {
-  background-color: var(--blue-light);
+  background-color: var(--blue-light-200);
 }
 .buttomToggle input:checked + span:before {
   transform: translateX(29px);

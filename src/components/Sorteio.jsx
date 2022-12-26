@@ -1,6 +1,6 @@
 import styles from './Sorteio.module.css'
 import { Toggle } from './ButtomToggle'
-import { ButtomCalcular } from './ButtomCalcular'
+import { ButtomSortear } from './ButtomSortear'
 
 export function Sorteio() {
   const logState = state => {
@@ -24,7 +24,7 @@ export function Sorteio() {
           />
         </div>
         <div>
-          <ButtomCalcular 
+          <ButtomSortear 
           name="Sortear"
           />
         </div>
