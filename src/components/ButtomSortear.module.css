@@ -1,3 +1,8 @@
+.resultadoNumerico {
+  padding: .5rem 1rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
 .buttomSortear {
   background: var(--blue-light-200);
   color: var(--white-100);

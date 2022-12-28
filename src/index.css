@@ -23,8 +23,18 @@
 body {
   color: var(--white-100);
   background-color: var(--blue-300);
-  /* display: flex; */
+  display: flex;
   /* place-items: center; */
   /* min-width: 320px; */
   /* min-height: 100vh; */
+}
+body::-webkit-scrollbar {
+  width: .5rem;
+}
+body::-webkit-scrollbar-track {
+  background: var(--blue-300);
+}
+body::-webkit-scrollbar-thumb {
+  background-color: var(--blue-200);
+  border-radius: .5rem;
 }

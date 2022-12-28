@@ -9,7 +9,6 @@ function App() {
   return (
     <div className="App">
       <SideBar />
-      <p>Aqui</p>
       <div className="sorteioNumero">
       <Sorteio />
       </div>

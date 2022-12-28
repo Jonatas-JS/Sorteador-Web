@@ -8,27 +8,23 @@ export function ButtomSortear({ name }) {
     const nQuantidade = Number(document.querySelector('#nQuantidade').value)
     const nInicial = Number(document.querySelector('#nInicial').value)
     const nFinal = Number(document.querySelector('#nFinal').value)
+    const Acc = []
 
-    const acumulado = []
     
     for(let i = 0; i < nQuantidade; i++) {
       let gerarMathRandom = (min, max) => 
       Math.floor(Math.random() * (max - min + 1) + min)
       
       let nGerado = gerarMathRandom(nInicial, nFinal)
-      console.log(typeof nGerado)
-      
-      setNsorteados([...nSorteados, ...[nGerado]])
-
-      acumulado.push(nGerado)
+      Acc.push(nGerado)
     }
-    console.log(acumulado)
+    setNsorteados(Acc)
   }
 
   return (
     <div>
       <p key={Math.random()}> Resultado é:
-        <p><strong>{nSorteados.map(item => <i key={Math.random()}>{item}, </i>)}</strong></p>
+        <p className={styles.resultadoNumerico}>{nSorteados.map(item => <i key={Math.random()}>{item} - </i>)}</p>
       </p>
       
       <button className={styles.buttomSortear} onClick={Sortear}>{name}</button>
