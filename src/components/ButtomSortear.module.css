@@ -13,9 +13,10 @@
   border-radius: .5rem;
 
   font-size: 1.3rem;
-  font-weight: 400;
+  font-weight: bolder;
   cursor: pointer;
 }
 .buttomSortear:hover {
   background: var(--blue-light-100);
+  box-shadow: 0 0 2rem var(--blue-light-100);
 }
